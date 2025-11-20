@@ -5,18 +5,22 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        if not subRoot:
-            return True
-        if not root:
-            return False
-            
-        def isSame(p, q):
-            if not p or not q:
-                return p == q
-            if p.val != q.val:
-                return False
-            return isSame(p.left, q.left) and isSame(p.right, q.right)
-        
-        return isSame(root, subRoot) or self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+    def isSubtree(self, s: Optional[TreeNode], t: Optional[TreeNode]) -> bool:
+        def preorder(node, out):
+            if not node:
+                out.append('X')
+                return
+            out.append(',' + str(node.val))
+            preorder(node.left, out)
+            preorder(node.right, out)
+
+        s_ser = []
+        t_ser = []
+        preorder(s, s_ser)
+        preorder(t, t_ser)
+
+        s_str = ''.join(s_ser)
+        t_str = ''.join(t_ser)
+
+        return t_str in s_str
         
