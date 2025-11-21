@@ -7,7 +7,7 @@ class Solution:
                 or r >= len(heights)
                 or c >= len(heights[r])
                 or (r, c) in visited
-                or heights[r][c] <= previous
+                or heights[r][c] < previous
             ):
                 return
             visited.add((r,c))
