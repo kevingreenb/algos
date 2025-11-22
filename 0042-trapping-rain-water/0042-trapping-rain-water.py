@@ -12,10 +12,10 @@ class Solution:
                     leftMax = height[left]
                 left += 1
             else:
-                if height[right] >= rightMax:
-                    rightMax = height[right]
-                else:
+                if height[right] < rightMax:
                     water += rightMax - height[right]
+                else:
+                    rightMax = height[right]
                 right -= 1
         
         return water
