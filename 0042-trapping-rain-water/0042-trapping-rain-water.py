@@ -6,10 +6,10 @@ class Solution:
         
         while left < right:
             if height[left] < height[right]:
-                if height[left] >= leftMax:
-                    leftMax = height[left]
-                else:
+                if height[left] < leftMax:
                     water += leftMax - height[left]
+                else:
+                    leftMax = height[left]
                 left += 1
             else:
                 if height[right] >= rightMax:
