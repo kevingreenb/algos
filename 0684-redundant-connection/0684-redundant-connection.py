@@ -1,25 +1,28 @@
-class Solution:
+from typing import List
+
+class Solution(object):
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         n = len(edges)
-        adj = [[] for _ in range(n + 1)]
+        parent = list(range(n + 1)) 
 
-        def dfs(node, par):
-            if visit[node]:
+        def find(x: int) -> int:
+            if parent[x] == x:
+                return x
+            parent[x] = find(parent[x]) 
+            return parent[x]
+
+        def union(x: int, y: int) -> bool:
+            root_x = find(x)
+            root_y = find(y)
+            
+            if root_x != root_y:
+                parent[root_x] = root_y
                 return True
-
-            visit[node] = True
-            for nei in adj[node]:
-                if nei == par:
-                    continue
-                if dfs(nei, node):
-                    return True
-            return False
+            else:
+                return False 
 
         for u, v in edges:
-            adj[u].append(v)
-            adj[v].append(u)
-            visit = [False] * (n + 1)
-
-            if dfs(u, -1):
+            if not union(u, v):
                 return [u, v]
+
         return []
