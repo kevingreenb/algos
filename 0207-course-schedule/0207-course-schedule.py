@@ -1,23 +1,18 @@
-class Solution(object):
-    def canFinish(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: bool
-        """
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         g = defaultdict(list)
         indegree = [0]*numCourses
         q = deque()
         seen = 0
 
-        for course, prereq in prerequisites:
-            g[prereq].append(course)
-            indegree[course] += 1
-        
-        for course, val in enumerate(indegree):
-            if val == 0:
-                q.append(course)
+        for c, p in prerequisites:
+            indegree[c] += 1
+            g[p].append(c)
 
+        for i, v in enumerate(indegree):
+            if v == 0:
+                q.append(i)
+        
         while q:
             current = q.popleft()
             seen += 1
@@ -27,5 +22,6 @@ class Solution(object):
                     q.append(c)
 
         return seen == numCourses
+
 
         
