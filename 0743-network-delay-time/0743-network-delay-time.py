@@ -1,25 +1,24 @@
 class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
-
         g = defaultdict(list)
-        visited = set([k])
-        q = deque([(k, 0)])
-        seen = 0
-        ans = 0
 
-        for n1, n2, c in times:
-            g[n1].append((n2, c))
+        for n1, n2, w in times:
+            g[n1].append((n2, w))
 
-        while q:
-            current, cost1 = q.popleft()
-            seen += 1
+        dist = {}
+        mq = [(0, k)]
+
+        while mq:
+            cost1, current = heapq.heappop(mq)
+
+            if current in dist:
+                continue
+
+            dist[current] = cost1
 
             for nei, cost2 in g[current]:
-                if nei not in visited:
-                    new_cost = cost1+cost2
-                    visited.add(nei)
-                    q.append((nei, new_cost))
-                    ans = max(ans, new_cost)
+                heapq.heappush(mq, (cost1+cost2, nei))
         
-        return ans if seen == n else -1
+        return -1 if len(dist) != n else max(dist.values())
+
         
