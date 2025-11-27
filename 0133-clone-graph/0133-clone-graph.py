@@ -12,18 +12,17 @@ class Solution:
         if not node:
             return node
 
-        g = {}
-        g[node] = Node(node.val)
+        g = { node : Node(node.val) }
         q = deque([node])
 
         while q:
             current = q.popleft()
-            print(f"processing {current.val}")
-            for n in current.neighbors:
-                if n not in g:
-                    g[n] = Node(n.val)
-                    q.append(n)
-                g[current].neighbors.append(g[n])
-        
-        return g[node]
+
+            for nei in current.neighbors:
+                if nei not in g:
+                    g[nei] = Node(nei.val)
+                    q.append(nei)
+                g[current].neighbors.append(g[nei])
+
+        return g[node]    
         
