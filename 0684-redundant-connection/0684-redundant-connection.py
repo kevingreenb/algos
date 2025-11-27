@@ -8,14 +8,13 @@ class Solution:
             return find(parent[x])
         
         def union(x, y):
-            root_x = find(x)
-            root_y = find(y)
-
-            if root_x != root_y:
-                parent[root_y] = root_x
+            xroot = find(x)
+            yroot = find(y)
+            if xroot != yroot:
+                parent[yroot] = xroot
                 return True
-            return False 
-
+            return False
+        
         for x, y in edges:
             if not union(x, y):
                 return [x, y]
