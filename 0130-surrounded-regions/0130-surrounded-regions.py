@@ -3,25 +3,34 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        def explore(b, r, c, old, new):
-            if r < 0 or c < 0 or r >= len(b) or c >= len(b[r]) or b[r][c] != old:
+        n, m = len(board), len(board[0])
+        def explore(r, c, board):
+            if ( 
+                r < 0 or c < 0 or
+                r >= n or c >= m or
+                board[r][c] != "O"
+                ):
                 return
-            b[r][c] = new
-            explore(b, r + 1, c, old, new)
-            explore(b, r - 1, c, old, new)
-            explore(b, r, c + 1, old, new)
-            explore(b, r, c - 1, old, new)
+            board[r][c] = "T"
+            explore(r + 1, c, board)
+            explore(r - 1, c, board)
+            explore(r, c + 1, board)
+            explore(r, c - 1, board)
+        
+        for r in range(n):
+            if board[r][0] == "O":
+                explore(r, 0, board)
+            if board[r][m-1] == "O":
+                explore(r, m-1, board)
 
-        for r in range(len(board)):
-            explore(board, r, 0, "O", "T")
-            explore(board, r, len(board[r])-1, "O", "T")
-
-        for c in range(len(board[0])):
-            explore(board, 0, c, "O", "T")
-            explore(board, len(board)-1, c, "O", "T")
-
-        for r in range(len(board)):
-            for c in range(len(board[r])):
+        for c in range(1, m-1):
+            if board[0][c] == "O":
+                explore(0, c, board)
+            if board[n-1][c] == "O":
+                explore(n-1, c, board)
+        
+        for r in range(n):
+            for c in range(m):
                 if board[r][c] == "T":
                     board[r][c] = "O"
                 elif board[r][c] == "O":
