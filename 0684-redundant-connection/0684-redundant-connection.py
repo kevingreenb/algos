@@ -6,17 +6,18 @@ class Solution:
             if parent[x] == x:
                 return x
             return find(parent[x])
-        
+
         def union(x, y):
-            xroot = find(x)
-            yroot = find(y)
-            if xroot != yroot:
-                parent[yroot] = xroot
+            rootx = find(x)
+            rooty = find(y)
+            if rootx != rooty:
+                parent[rooty] = rootx
                 return True
             return False
-        
+
         for x, y in edges:
             if not union(x, y):
                 return [x, y]
-
+        
         return []
+        
