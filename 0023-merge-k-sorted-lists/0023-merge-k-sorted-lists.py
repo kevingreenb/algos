@@ -12,10 +12,9 @@ class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         heap = []
         
-        # push (value, index, node) so ties on value are resolved by index
         for i, node in enumerate(lists):
             if node:
-                heapq.heappush(heap, (node.val, i, node))
+                heapq.heappush(heap, (node.val, i, node)) # i serves as tie breaker or else it evaluates node
         
         dummy = ListNode(0)
         ptr = dummy
@@ -24,7 +23,6 @@ class Solution:
             ptr.next = node
             ptr = ptr.next
             if node.next:
-                # use the same index or a new unique counter; using i is fine here
                 heapq.heappush(heap, (node.next.val, i, node.next))
         
         return dummy.next
