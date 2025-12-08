@@ -1,10 +1,12 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        groups = defaultdict(list)
+        g = defaultdict(list)
+
         for word in strs:
-            counter = [0]*26
+            count = [0]*26
             for c in word:
-                counter[ord(c)-ord('a')] += 1
-            groups[tuple(counter)].append(word)
-        return list(groups.values())
+                count[ord(c)-ord("a")] += 1
+            g[tuple(count)].append(word)
+        
+        return list(g.values())
         
