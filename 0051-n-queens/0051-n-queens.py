@@ -1,38 +1,33 @@
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         cols = set()
-        pos_diags = set() 
-        neg_diags = set()
-        
-        res = []
+        p_diag = set()
+        n_diag = set()
+        ans = []
         board = [["."] * n for _ in range(n)]
-        
-        def backtrack(r):
-            if r == n:
-                copy = ["".join(row) for row in board]
-                res.append(copy)
+
+        def backtrack(row):
+            if row == n:
+                copy = ["".join(r) for r in board]
+                ans.append(copy)
                 return
-            
             for c in range(n):
-                cur_pos_diag = r + c
-                cur_neg_diag = r - c
-                
-                if (c in cols or 
-                    cur_pos_diag in pos_diags or 
-                    cur_neg_diag in neg_diags):
+                p_diag2 = row + c
+                n_diag2 = row - c
+                if c in cols or p_diag2 in p_diag or n_diag2 in n_diag:
                     continue
-                
+
                 cols.add(c)
-                pos_diags.add(cur_pos_diag)
-                neg_diags.add(cur_neg_diag)
-                board[r][c] = "Q"
-                
-                backtrack(r + 1)
-                
+                p_diag.add(p_diag2)
+                n_diag.add(n_diag2)
+                board[row][c] = "Q"
+
+                backtrack(row + 1)
+
                 cols.remove(c)
-                pos_diags.remove(cur_pos_diag)
-                neg_diags.remove(cur_neg_diag)
-                board[r][c] = "."
-        
+                p_diag.remove(p_diag2)
+                n_diag.remove(n_diag2)
+                board[row][c] = "."
+
         backtrack(0)
-        return res
+        return ans
