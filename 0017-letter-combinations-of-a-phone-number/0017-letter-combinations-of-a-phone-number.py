@@ -13,16 +13,14 @@ class Solution:
             9: "wxyz"
         }
         ans, cur = [], []
-        def dfs(i):
-            if i >= len(digits):
+        def helper(i):
+            if i == len(digits):
                 ans.append("".join(cur))
                 return
-            d = digits[i]
-            for c in phone[int(d)]:
+            for c in phone[int(digits[i])]:
                 cur.append(c)
-                dfs(i + 1)
+                helper(i + 1)
                 cur.pop()
-        dfs(0)
+        helper(0)
         return ans
-
         
