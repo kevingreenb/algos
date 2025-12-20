@@ -5,6 +5,9 @@ class Solution:
             return nums[0]
 
         def rob_range(start, end):
+            if start == end:
+                return nums[start]
+
             prev2 = nums[start]
             prev1 = max(nums[start], nums[start + 1])
 
