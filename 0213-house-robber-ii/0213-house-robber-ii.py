@@ -3,16 +3,20 @@ class Solution:
         n = len(nums)
         if n == 1:
             return nums[0]
-        def rob_linear(houses):
-            if not houses:
+
+        def rob_range(start, end):
+            if start > end:
                 return 0
-            if len(houses) == 1:
-                return houses[0]
-            prev2 = houses[0]
-            prev1 = max(houses[0], houses[1])
-            for i in range(2, len(houses)):
-                current = max(prev2 + houses[i], prev1)
+            if start == end:
+                return nums[start]
+
+            prev2 = nums[start]
+            prev1 = max(nums[start], nums[start + 1])
+
+            for i in range(start + 2, end + 1):
+                current = max(prev2 + nums[i], prev1)
                 prev2 = prev1
                 prev1 = current
+                
             return prev1
-        return max(rob_linear(nums[:-1]), rob_linear(nums[1:]))
+        return max(rob_range(0, n - 2), rob_range(1, n - 1))
