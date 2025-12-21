@@ -1,23 +1,19 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        if not s: return ""
+        start, end = 0, 0
         def explore(left, right):
-            q = deque()
             while left >= 0 and right < len(s) and s[left] == s[right]:
-                if left == right:
-                    q.append(s[left])
-                else:
-                    q.appendleft(s[left])
-                    q.append(s[right])
                 left -= 1
                 right += 1
-            return q
+            return right - left - 1
 
-        ans = []
         for i in range(len(s)):
-            odd = explore(i, i)
-            even = explore(i, i+1)
-            longer = odd if len(odd) > len(even) else even
-            ans = longer if len(longer) > len(ans) else ans
-        return "".join(ans)
-
-        
+            len1 = explore(i, i)
+            len2 = explore(i, i + 1)
+            max_len = max(len1, len2)
+            if max_len > (end - start):
+                start = i - (max_len - 1) // 2
+                end = i + max_len // 2
+                
+        return s[start : end + 1]
