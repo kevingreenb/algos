@@ -29,7 +29,7 @@ class Solution:
                         if grid[nr][nc] == 1:
                             grid[nr][nc] = 2
                             q.append((nr, nc))
-                            rotten += 1
+                            oranges -= 1
                             
-        return ans if oranges == rotten else -1
+        return ans if oranges == 0 else -1
         
