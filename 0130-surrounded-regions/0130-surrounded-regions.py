@@ -3,34 +3,23 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        n, m = len(board), len(board[0])
-        def explore(r, c, board):
-            if ( 
-                r < 0 or c < 0 or
-                r >= n or c >= m or
-                board[r][c] != "O"
-                ):
-                return
-            board[r][c] = "T"
-            explore(r + 1, c, board)
-            explore(r - 1, c, board)
-            explore(r, c + 1, board)
-            explore(r, c - 1, board)
-        
-        for r in range(n):
-            if board[r][0] == "O":
-                explore(r, 0, board)
-            if board[r][m-1] == "O":
-                explore(r, m-1, board)
+        m, n = len(board), len(board[0])
+        def explore(r, c):
+            if 0 <= r < m and 0 <= c < n and board[r][c] == "O":
+                board[r][c] = "T"
+                directions = [(0,1), (0,-1), (1, 0), (-1, 0)]
+                for dr, dc in directions:
+                    explore(r + dr, c + dc)
+        for r in range(m):
+            explore(r, 0)
+            explore(r, n-1)
 
-        for c in range(1, m-1):
-            if board[0][c] == "O":
-                explore(0, c, board)
-            if board[n-1][c] == "O":
-                explore(n-1, c, board)
-        
-        for r in range(n):
-            for c in range(m):
+        for c in range(n):
+            explore(0, c)
+            explore(m-1, c)
+
+        for r in range(m):
+            for c in range(n):
                 if board[r][c] == "T":
                     board[r][c] = "O"
                 elif board[r][c] == "O":
