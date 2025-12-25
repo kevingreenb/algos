@@ -8,7 +8,7 @@ class Solution:
                 directions = [(0,1),(0,-1),(1,0),(-1,0)]
                 for dr, dc in directions:
                     explore(r+dr, c+dc, visited, heights[r][c])
-                    
+
         for c in range(n):
             explore(0, c, pac, heights[0][c])
             explore(m-1, c, atl, heights[m-1][c])
@@ -17,5 +17,4 @@ class Solution:
             explore(r, 0, pac, heights[r][0])
             explore(r, n-1, atl, heights[r][n-1])
 
-        return [[r,c] for (r, c) in pac if (r, c) in atl]
-        
+        return [list(cell) for cell in pac & atl]
