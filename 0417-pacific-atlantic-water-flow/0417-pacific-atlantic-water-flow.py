@@ -1,35 +1,21 @@
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         pac, atl = set(), set()
-        ans = []
-        n, m = len(heights), len(heights[0])
+        m, n = len(heights), len(heights[0])
+        def explore(r, c, visited, prev):
+            if 0 <= r < m and 0 <= c < n and (r, c) not in visited and heights[r][c] >= prev:
+                visited.add((r, c))
+                directions = [(0,1),(0,-1),(1,0),(-1,0)]
+                for dr, dc in directions:
+                    explore(r+dr, c+dc, visited, heights[r][c])
+                    
+        for c in range(n):
+            explore(0, c, pac, heights[0][c])
+            explore(m-1, c, atl, heights[m-1][c])
 
-        def explore(r, c, heights, visited, prev):
-            if (
-                r < 0
-                or c < 0
-                or r >= len(heights)
-                or c >= len(heights[r])
-                or heights[r][c] < prev
-                or (r, c) in visited
-            ):
-                return
-            visited.add((r, c))
-            explore(r - 1, c, heights, visited, heights[r][c])
-            explore(r + 1, c, heights, visited, heights[r][c])
-            explore(r, c - 1, heights, visited, heights[r][c])
-            explore(r, c + 1, heights, visited, heights[r][c])
-        
-        for r in range(n):
-            explore(r, 0, heights, pac, heights[r][0])
-            explore(r, m-1, heights, atl, heights[r][m-1])
+        for r in range(m):
+            explore(r, 0, pac, heights[r][0])
+            explore(r, n-1, atl, heights[r][n-1])
 
-        for c in range(m):
-            explore(0, c, heights, pac, heights[0][c])
-            explore(n-1, c, heights, atl, heights[n-1][c])
+        return [[r,c] for (r, c) in pac if (r, c) in atl]
         
-        for element in pac:
-            if element in atl:
-                ans.append([element[0],element[1]])
-        
-        return ans
