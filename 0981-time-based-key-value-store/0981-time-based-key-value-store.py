@@ -10,8 +10,6 @@ class TimeMap:
 
     def get(self, key: str, timestamp: int) -> str:
         ans = ""
-        if key not in self.store:
-            return ans
         left, right = 0, len(self.store[key])-1
         while left <= right:
             mid = (right+left)//2
