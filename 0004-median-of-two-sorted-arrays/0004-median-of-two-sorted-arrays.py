@@ -25,5 +25,3 @@ class Solution:
                 r = i - 1
             else:
                 l = i + 1
-
-        return 0.0
