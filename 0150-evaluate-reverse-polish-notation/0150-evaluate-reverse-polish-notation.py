@@ -1,23 +1,20 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
+        ops = "+-*/"
         stack = []
-        # 10, 6, -132
         for token in tokens:
-            if token in "+-*/":
-                second = stack.pop()
-                first = stack.pop()
-                result = 0
-                if token == "+":
-                    result = first + second
-                elif token == "-":
-                    result = first - second
-                elif token == "*":
-                    result = first * second
-                elif token == "/":
-                    result = int(first / second)
-                stack.append(result)
-            else:
-                stack.append(int(token))
-
-        return stack[0]
+            if token not in ops:
+                stack.append(token)
+                continue
+            second = int(stack.pop())
+            first = int(stack.pop())
+            if token == "+":
+                stack.append(first + second)
+            elif token == "-":
+                stack.append(first - second)
+            elif token == "*":
+                stack.append(first * second)
+            elif token == "/":
+                stack.append(first / second)
+        return int(stack[0])
         
