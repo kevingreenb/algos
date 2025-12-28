@@ -7,15 +7,13 @@ class Solution:
                 if current > h:
                     return False
             return True
-        ans, left = 0, 1
-        right = max(piles)
+        left, right = 1, max(piles)
+        ans = 0
         while left <= right:
-            mid = (right+left)//2
+            mid = (left + right) // 2
             if is_valid(mid, h):
                 ans = mid
                 right = mid - 1
             else:
                 left = mid + 1
         return ans
-
-        
