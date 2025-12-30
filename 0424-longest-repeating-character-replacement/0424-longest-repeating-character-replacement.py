@@ -10,5 +10,3 @@ class Solution:
                 left += 1
             ans = max(ans, i - left + 1)
         return ans
-
-        
