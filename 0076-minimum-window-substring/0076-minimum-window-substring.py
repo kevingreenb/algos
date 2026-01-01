@@ -12,12 +12,12 @@ class Solution:
             if c in count_t and count_t[c] == count_s[c]:
                 needed -= 1
             while needed == 0 and left <= right:
-                if right - left + 1 < ans_len:
+                if right - left < ans_len:
                     ans = [left, right]
-                    ans_len = right - left + 1
+                    ans_len = right - left
                 c2 = s[left]
                 left += 1
                 count_s[c2] -= 1
                 if c2 in count_t and count_s[c2] == count_t[c2] - 1:
-                    needed += 1     
+                    needed += 1
         return "" if ans_len == float("inf") else s[ans[0] : ans[1] + 1]
