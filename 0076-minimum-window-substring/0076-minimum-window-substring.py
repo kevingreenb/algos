@@ -17,8 +17,8 @@ class Solution:
                     ans = [left, right]
                     ans_len = right - left + 1
                 c2 = s[left]
+                left += 1
                 count_s[c2] -= 1
                 if c2 in count_t and count_s[c2] < count_t[c2]:
                     needed += 1     
-                left += 1
         return "" if ans_len == float("inf") else s[ans[0] : ans[1] + 1]
