@@ -2,7 +2,6 @@ class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if not t or not s:
             return ""
-
         dict_t = Counter(t)
         required = len(dict_t)
         l, r = 0, 0
