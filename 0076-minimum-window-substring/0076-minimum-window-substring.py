@@ -5,8 +5,7 @@ class Solution:
         count_t = Counter(t)
         count_s = defaultdict(int)
         needed = len(count_t)
-        left = formed = 0
-        ans_len = float("inf")
+        left, ans_len = 0, float("inf")
         ans = [0, 0]
         for right, c in enumerate(s):
             count_s[c] += 1
@@ -19,6 +18,6 @@ class Solution:
                 c2 = s[left]
                 left += 1
                 count_s[c2] -= 1
-                if c2 in count_t and count_t[c2] == count_s[c2] - 1:
-                    needed += 1
+                if c2 in count_t and count_s[c2] == count_t[c2] - 1:
+                    needed += 1     
         return "" if ans_len == float("inf") else s[ans[0] : ans[1] + 1]
