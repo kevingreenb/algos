@@ -5,30 +5,19 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # First, check if we have k nodes to reverse
-        count = 0
-        curr = head
-        while curr and count < k:
-            curr = curr.next
+        count = 0 
+        current = head
+        while current and count < k:
             count += 1
-        
-        # If we don't have k nodes, return head as-is
+            current = current.next
         if count < k:
             return head
-        
-        # Reverse k nodes
-        prev = None
-        curr = head
+        current, previous = head, None
         for _ in range(k):
-            next_node = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next_node
-        
-        # head is now the tail of the reversed section
-        # Connect it to the result of reversing the rest
-        head.next = self.reverseKGroup(curr, k)
-        
-        # prev is the new head of this reversed section
-        return prev
+            next = current.next
+            current.next = previous 
+            previous = current
+            current = next
+        head.next = self.reverseKGroup(current, k)
+        return previous
         
