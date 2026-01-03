@@ -8,9 +8,7 @@ class Solution:
             indegree[c] += 1
             g[p].append(c)
         
-        for i, v in enumerate(indegree):
-            if v == 0:
-                q.append(i)
+        q = deque([ i for i, v in enumerate(indegree) if v == 0])
         seen = 0
         while q:
             c = q.popleft()
