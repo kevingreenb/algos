@@ -1,15 +1,11 @@
+import bisect
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-        tails = []
-        for x in nums:
-            # Find the index of the first element >= x
-            idx = bisect.bisect_left(tails, x)
-            
-            # If x is larger than any element in tails, extend the list
-            if idx == len(tails):
-                tails.append(x)
-            # Otherwise, replace the element at idx with x to keep tails small
+        seq = []
+        for num in nums:
+            i = bisect.bisect_left(seq, num)
+            if i == len(seq):
+                seq.append(num)
             else:
-                tails[idx] = x
-                
-        return len(tails)
+                seq[i] = num
+        return len(seq)
