@@ -3,11 +3,11 @@ class Solution:
         num_set = set(nums)
         ans = 0
         for num in num_set:
-            if num-1 not in num_set:
-                current = num
+            if num - 1 not in num_set:
+                cur = num
                 streak = 0
-                while current in num_set:
+                while cur in num_set:
                     streak += 1
-                    current += 1
+                    cur += 1
                 ans = max(ans, streak)
-        return ans
+        return ans   
