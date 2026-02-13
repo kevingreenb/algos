@@ -8,24 +8,31 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        def reverse(node):
-            current, previous = node, None
-            while current:
-                next = current.next
-                current.next = previous
-                previous = current
-                current = next
-            return previous
+
+        def reverse(list_node):
+            cur, prev = list_node, None
+            while cur:
+                next = cur.next
+                cur.next = prev
+                prev = cur
+                cur = next
+            return prev
+        
         slow, fast = head, head
+
         while fast and fast.next:
-            fast = fast.next.next
             slow = slow.next
-        second = slow.next
+            fast = fast.next.next
+
+
+        first, second = head, reverse(slow.next)
         slow.next = None
-        first = head
-        second = reverse(second)
-        while second:
+
+        while first and second:
             first_next, second_next = first.next, second.next
             first.next = second
             second.next = first_next
-            first, second  = first_next, second_next
+            first, second = first_next, second_next
+        
+        return head
+        
