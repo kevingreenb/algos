@@ -6,28 +6,36 @@
 #         self.right = None
 
 class Codec:
-    def serialize(self, root: TreeNode) -> str:
-        """Encodes a tree to a single string using preorder traversal."""
-        result = []
-        
-        def preorder(node):
-            if not node:
-                result.append("N")  # null marker
-                return
-            result.append(str(node.val))
-            preorder(node.left)
-            preorder(node.right)
-        
-        preorder(root)
-        return ",".join(result)
 
-    def deserialize(self, data: str) -> TreeNode:
-        """Decodes your encoded data to tree."""
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        results = []
+        def preorder(root):
+            if not root:
+                results.append("x")
+                return
+            results.append(str(root.val))
+            preorder(root.left)
+            preorder(root.right)
+        preorder(root)
+        return ",".join(results)
+        
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
         values = iter(data.split(","))
         
         def build():
             val = next(values)
-            if val == "N":
+            if val == "x":
                 return None
             node = TreeNode(int(val))
             node.left = build()
