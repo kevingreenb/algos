@@ -21,9 +21,9 @@ class Codec:
             results.append(str(root.val))
             preorder(root.left)
             preorder(root.right)
+
         preorder(root)
         return ",".join(results)
-        
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -32,16 +32,16 @@ class Codec:
         :rtype: TreeNode
         """
         values = iter(data.split(","))
-        
         def build():
-            val = next(values)
-            if val == "x":
+            value = next(values)
+            if value == "x":
                 return None
-            node = TreeNode(int(val))
+            node = TreeNode(int(value))
             node.left = build()
             node.right = build()
+
             return node
-        
+            
         return build()
         
 
