@@ -11,24 +11,21 @@ class Node:
 class Solution:
     def connect(self, root: 'Node') -> 'Node':
         if not root:
-            return None
+            return root
 
+        cur = root
 
-        curr = root
-        while curr:
+        while cur:
             dummy = Node(0)
             pointer = dummy
-            while curr:
-                if curr.left:
-                    pointer.next = curr.left
+            while cur:
+                if cur.left:
+                    pointer.next = cur.left
                     pointer = pointer.next
-                if curr.right:
-                    pointer.next = curr.right
+                if cur.right:
+                    pointer.next = cur.right
                     pointer = pointer.next
                 
-                curr = curr.next
-            curr = dummy.next
-        return root
-
-        
-
+                cur = cur.next
+            cur = dummy.next
+        return root     
