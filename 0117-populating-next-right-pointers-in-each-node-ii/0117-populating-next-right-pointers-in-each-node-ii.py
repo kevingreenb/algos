@@ -9,19 +9,26 @@ class Node:
 """
 
 class Solution:
-    def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
+    def connect(self, root: 'Node') -> 'Node':
         if not root:
-            return root
-        q = deque([root])
+            return None
 
-        while q:
-            size = len(q)
-            for i in range(size):
-                cur = q.popleft()
-                if i != size - 1:
-                    cur.next = q[0]
-                if cur.left:
-                    q.append(cur.left)
-                if cur.right:
-                    q.append(cur.right)
+
+        curr = root
+        while curr:
+            dummy = Node(0)
+            pointer = dummy
+            while curr:
+                if curr.left:
+                    pointer.next = curr.left
+                    pointer = pointer.next
+                if curr.right:
+                    pointer.next = curr.right
+                    pointer = pointer.next
+                
+                curr = curr.next
+            curr = dummy.next
         return root
+
+        
+
