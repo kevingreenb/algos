@@ -37,8 +37,21 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kevingreenb/algos/tree/main/0107-binary-tree-level-order-traversal-ii/) | Medium |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 <!---LeetCode Topics End-->
