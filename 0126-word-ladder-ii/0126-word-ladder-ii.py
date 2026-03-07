@@ -1,6 +1,3 @@
-from collections import defaultdict, deque
-from typing import List
-
 class Solution:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         if endWord not in wordList:
@@ -10,12 +7,14 @@ class Solution:
         if beginWord not in wordList:
             wordList.add(beginWord)
         
+        # Build adjacency graph
         g = defaultdict(list)
         for word in wordList:
             for i in range(len(word)):
                 pattern = word[:i] + "*" + word[i+1:]
                 g[pattern].append(word)
         
+        # BFS to find shortest distances and parents
         dist = {beginWord: 0}
         parent = defaultdict(list)
         q = deque([beginWord])
@@ -44,7 +43,13 @@ class Solution:
         if endWord not in dist:
             return []
         
+        # Memoized backtracking
+        memo = {}
+        
         def backtrack(word):
+            if word in memo:
+                return memo[word]
+            
             if word == beginWord:
                 return [[beginWord]]
             
@@ -52,6 +57,8 @@ class Solution:
             for prev in parent[word]:
                 for path in backtrack(prev):
                     paths.append(path + [word])
+            
+            memo[word] = paths
             return paths
         
         return backtrack(endWord)
