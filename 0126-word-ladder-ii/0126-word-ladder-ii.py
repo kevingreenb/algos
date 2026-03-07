@@ -7,14 +7,13 @@ class Solution:
         if beginWord not in wordList:
             wordList.add(beginWord)
         
-        # Build adjacency graph
+
         g = defaultdict(list)
         for word in wordList:
             for i in range(len(word)):
                 pattern = word[:i] + "*" + word[i+1:]
                 g[pattern].append(word)
         
-        # BFS to find shortest distances and parents
         dist = {beginWord: 0}
         parent = defaultdict(list)
         q = deque([beginWord])
