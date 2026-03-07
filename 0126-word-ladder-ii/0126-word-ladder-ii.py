@@ -40,12 +40,8 @@ class Solution:
                         elif dist[neighbor] == curr_dist + 1:
                             parent[neighbor].append(curr)
         
-        if endWord not in dist:
-            return []
-        
-        # Memoized backtracking
+
         memo = {}
-        
         def backtrack(word):
             if word in memo:
                 return memo[word]
