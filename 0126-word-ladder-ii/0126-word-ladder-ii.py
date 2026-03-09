@@ -40,11 +40,8 @@ class Solution:
                             parent[neighbor].append(curr)
         
 
-        memo = {}
+        @cache
         def backtrack(word):
-            if word in memo:
-                return memo[word]
-            
             if word == beginWord:
                 return [[beginWord]]
             
@@ -53,7 +50,6 @@ class Solution:
                 for path in backtrack(prev):
                     paths.append(path + [word])
             
-            memo[word] = paths
             return paths
         
         return backtrack(endWord)
