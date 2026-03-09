@@ -40,7 +40,7 @@ class Solution:
                             parent[neighbor].append(curr)
         
 
-        @lru_cache
+        @lru_cache(100)
         def backtrack(word):
             if word == beginWord:
                 return [[beginWord]]
