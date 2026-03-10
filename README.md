@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kevingreenb/algos/tree/main/0107-binary-tree-level-order-traversal-ii/) | Medium |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -22,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0101-symmetric-tree](https://github.com/kevingreenb/algos/tree/main/0101-symmetric-tree/) | Easy |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -30,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kevingreenb/algos/tree/main/0107-binary-tree-level-order-traversal-ii/) | Medium |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -52,9 +55,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/kevingreenb/algos/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
+| [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/kevingreenb/algos/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
+| [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 <!---LeetCode Topics End-->
