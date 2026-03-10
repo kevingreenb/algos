@@ -1,12 +1,12 @@
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        res, path = [], []
+        ans, path = [], []
         nums.sort()
         used = [False] * len(nums)
         
         def backtrack():
             if len(path) == len(nums):
-                res.append(path[:])
+                ans.append(path[:])
                 return
             
             for i in range(len(nums)):
@@ -25,4 +25,4 @@ class Solution:
                 used[i] = False
                 
         backtrack()
-        return res
+        return ans
