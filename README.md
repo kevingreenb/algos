@@ -60,6 +60,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/kevingreenb/algos/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
+| [0039-combination-sum](https://github.com/kevingreenb/algos/tree/main/0039-combination-sum/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0039-combination-sum](https://github.com/kevingreenb/algos/tree/main/0039-combination-sum/) | Medium |
 <!---LeetCode Topics End-->
