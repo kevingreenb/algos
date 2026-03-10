@@ -10,11 +10,13 @@ class Solution:
             return []
         ans, cur = [], []
 
+        def is_leaf(root):
+            return not root.left and not root.right
+
         def backtrack(root):
             cur.append(str(root.val))
-            if not root.left and not root.right:
+            if is_leaf(root):
                 ans.append("->".join(cur))
-            
             if root.left:
                 backtrack(root.left)
             if root.right:
