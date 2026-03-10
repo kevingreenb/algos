@@ -14,8 +14,6 @@ class Solution:
             cur.append(str(root.val))
             if not root.left and not root.right:
                 ans.append("->".join(cur))
-                cur.pop()
-                return
             
             if root.left:
                 backtrack(root.left)
