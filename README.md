@@ -64,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/kevingreenb/algos/tree/main/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/kevingreenb/algos/tree/main/0040-combination-sum-ii/) | Medium |
 | [0046-permutations](https://github.com/kevingreenb/algos/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/kevingreenb/algos/tree/main/0131-palindrome-partitioning/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
@@ -73,8 +74,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/kevingreenb/algos/tree/main/0039-combination-sum/) | Medium |
 | [0040-combination-sum-ii](https://github.com/kevingreenb/algos/tree/main/0040-combination-sum-ii/) | Medium |
 | [0046-permutations](https://github.com/kevingreenb/algos/tree/main/0046-permutations/) | Medium |
+| [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0131-palindrome-partitioning](https://github.com/kevingreenb/algos/tree/main/0131-palindrome-partitioning/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
 <!---LeetCode Topics End-->
