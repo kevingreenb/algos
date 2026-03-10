@@ -1,14 +1,14 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         ans = []
-        def helper(i):
+        def backtrack(i):
             if i == len(nums):
                 ans.append(nums[:])
                 return
             for j in range(i, len(nums)):
                 nums[i], nums[j] = nums[j], nums[i]
-                helper(i + 1)
+                backtrack(i + 1)
                 nums[i], nums[j] = nums[j], nums[i]
-        helper(0)
+        backtrack(0)
         return ans
         
