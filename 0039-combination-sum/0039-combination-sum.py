@@ -1,7 +1,7 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         ans, cur = [], []
-        def helper(i, s):
+        def backtrack(i, s):
             if s == target:
                 ans.append(cur[:])
                 return
@@ -9,8 +9,8 @@ class Solution:
                 return
             for j in range(i, len(candidates)):
                 cur.append(candidates[j])
-                helper(j, s+candidates[j])
+                backtrack(j, s + candidates[j])
                 cur.pop()
-        helper(0, 0)
+        backtrack(0, 0)
         return ans
         
