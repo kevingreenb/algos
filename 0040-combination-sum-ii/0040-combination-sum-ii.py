@@ -1,8 +1,8 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        candidates.sort()
         ans, cur = [], []
-        def helper(i, s):
+        candidates.sort()
+        def backtrack(i, s):
             if s == target:
                 ans.append(cur[:])
                 return
@@ -12,8 +12,7 @@ class Solution:
                 if s + candidates[j] > target:
                     break
                 cur.append(candidates[j])
-                helper(j + 1, s + candidates[j])
+                backtrack(j + 1, s + candidates[j])
                 cur.pop()
-        helper(0, 0)
+        backtrack(0, 0)
         return ans
-        
