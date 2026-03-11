@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/kevingreenb/algos/tree/main/0040-combination-sum-ii/) | Medium |
 | [0046-permutations](https://github.com/kevingreenb/algos/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
+| [0078-subsets](https://github.com/kevingreenb/algos/tree/main/0078-subsets/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/kevingreenb/algos/tree/main/0131-palindrome-partitioning/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
@@ -75,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/kevingreenb/algos/tree/main/0040-combination-sum-ii/) | Medium |
 | [0046-permutations](https://github.com/kevingreenb/algos/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
+| [0078-subsets](https://github.com/kevingreenb/algos/tree/main/0078-subsets/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -83,4 +85,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0078-subsets](https://github.com/kevingreenb/algos/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
