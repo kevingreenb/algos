@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/kevingreenb/algos/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -15,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kevingreenb/algos/tree/main/0107-binary-tree-level-order-traversal-ii/) | Medium |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -32,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kevingreenb/algos/tree/main/0107-binary-tree-level-order-traversal-ii/) | Medium |
 | [0112-path-sum](https://github.com/kevingreenb/algos/tree/main/0112-path-sum/) | Easy |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -89,4 +92,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0078-subsets](https://github.com/kevingreenb/algos/tree/main/0078-subsets/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
+## Binary Search Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
+## Iterator
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 <!---LeetCode Topics End-->
