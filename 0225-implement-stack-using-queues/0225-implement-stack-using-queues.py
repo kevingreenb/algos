@@ -1,8 +1,8 @@
-from dataclasses import dataclass
-
-@dataclass
 class Node:
-    val: int
+    def __init__(self, val, next=None, prev=None):
+        self.val = val
+        self.next = None
+        self.prev = None
 
 class MyStack:
 
