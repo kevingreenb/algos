@@ -1,19 +1,32 @@
+from dataclasses import dataclass
+
+@dataclass
+class Node:
+    val: int
+
 class MyStack:
 
+
     def __init__(self):
-        self.queue = deque()
+        self.tail = Node(0)
 
     def push(self, x: int) -> None:
-        self.queue.append(x)
+        new_node = Node(x)
+        new_node.prev = self.tail
+        self.tail.next = new_node
+        self.tail = self.tail.next
 
     def pop(self) -> int:
-        return self.queue.pop()
+        value = self.top()
+        self.tail = self.tail.prev
+        self.tail.next = None
+        return value
 
     def top(self) -> int:
-        return self.queue[-1]
+        return self.tail.val
 
     def empty(self) -> bool:
-        return len(self.queue) == 0
+        return self.tail.prev is None
         
 
 
