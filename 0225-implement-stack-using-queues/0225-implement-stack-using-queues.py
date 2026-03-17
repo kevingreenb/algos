@@ -8,17 +8,20 @@ class MyStack:
     def __init__(self):
         self.head = None
         
-
     def push(self, x: int) -> None:
         new_node = Node(x, self.head)
         self.head = new_node
 
     def pop(self) -> int:
+        if self.empty():
+            raise IndexError("empty stack")
         val = self.head.val
         self.head = self.head.next_node
         return val
 
     def top(self) -> int:
+        if self.empty():
+            raise IndexError("empty stack")
         return self.head.val
 
     def empty(self) -> bool:
