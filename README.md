@@ -50,12 +50,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/kevingreenb/algos/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/kevingreenb/algos/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
+| [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 ## String
 | Problem Name | Difficulty |
@@ -84,6 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0046-permutations](https://github.com/kevingreenb/algos/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/kevingreenb/algos/tree/main/0047-permutations-ii/) | Medium |
 | [0078-subsets](https://github.com/kevingreenb/algos/tree/main/0078-subsets/) | Medium |
+| [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -103,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0225-implement-stack-using-queues](https://github.com/kevingreenb/algos/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/kevingreenb/algos/tree/main/0232-implement-queue-using-stacks/) | Easy |
+| [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 ## Binary Search Tree
 | Problem Name | Difficulty |
@@ -120,5 +124,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Function
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 <!---LeetCode Topics End-->
