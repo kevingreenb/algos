@@ -1,33 +1,32 @@
 class MyHashMap:
+
     def __init__(self):
-        self.size = 2069
-        self.table = [[] for _ in range(self.size)]
+        self.key_space = 2069
+        self.table = [[] for _ in range(self.key_space)]
 
     def _hash(self, key: int) -> int:
-        return key % self.size
+        return key % self.key_space
 
     def put(self, key: int, value: int) -> None:
-        bucket = self.table[self._hash(key)]
-        for i, (k, v) in enumerate(bucket):
-            if k == key:
-                bucket[i] = (key, value)
+        hashed_key = self._hash(key)
+        for i, pair in enumerate(self.table[hashed_key]):
+            if key == pair[0]:
+                self.table[hashed_key][i] = (key, value)
                 return
-        bucket.append((key, value))
+        self.table[hashed_key].append((key, value))
 
     def get(self, key: int) -> int:
-        bucket = self.table[self._hash(key)]
-        for k, v in bucket:
-            if k == key:
-                return v
-        return -1
+        hashed_key = self._hash(key)
+        for i, pair in enumerate(self.table[hashed_key]):
+            if key == pair[0]:
+                return self.table[hashed_key][i][1]
+        return -1   
 
     def remove(self, key: int) -> None:
-        bucket = self.table[self._hash(key)]
-        for i, (k, v) in enumerate(bucket):
-            if k == key:
-                del bucket[i]
-                return
-        
+        hashed_key = self._hash(key)
+        for i, pair in enumerate(self.table[hashed_key]):
+            if key == pair[0]:
+                del self.table[hashed_key][i]      
 
 
 # Your MyHashMap object will be instantiated and called as such:
