@@ -1,17 +1,20 @@
-import heapq
-TIME_RANGE  = 3000
+from collections import deque
 
 class RecentCounter:
-
     def __init__(self):
-        self.list = []
-        
+        # Deque is perfect for sliding window problems
+        self.queue = deque()
 
     def ping(self, t: int) -> int:
-        while self.list and t - self.list[0] > TIME_RANGE:
-            heapq.heappop(self.list)
-        heapq.heappush(self.list, t)
-        return len(self.list)
+        # 1. Add the new timestamp
+        self.queue.append(t)
+        
+        # 2. Remove timestamps outside the [t - 3000, t] range
+        # This is O(1) on average because each element is added/removed once
+        while self.queue[0] < t - 3000:
+            self.queue.popleft()
+            
+        return len(self.queue)
         
 
 
