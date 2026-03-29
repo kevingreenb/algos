@@ -109,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 | [0933-number-of-recent-calls](https://github.com/kevingreenb/algos/tree/main/0933-number-of-recent-calls/) | Easy |
+| [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -132,4 +133,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0933-number-of-recent-calls](https://github.com/kevingreenb/algos/tree/main/0933-number-of-recent-calls/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
 <!---LeetCode Topics End-->
