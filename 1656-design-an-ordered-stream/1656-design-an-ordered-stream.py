@@ -8,9 +8,8 @@ class OrderedStream:
     def insert(self, idKey: int, value: str) -> List[str]:
         self.store[idKey] = value
         results = []
-        while self.ptr < len(self.store) and self.store[self.ptr] != None and self.ptr == idKey:
-            results.append(self.store[idKey])
-            idKey += 1
+        while self.ptr < len(self.store) and self.store[self.ptr] is not None:
+            results.append(self.store[self.ptr])
             self.ptr += 1
         return results
         
