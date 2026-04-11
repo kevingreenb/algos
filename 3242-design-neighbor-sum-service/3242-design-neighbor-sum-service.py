@@ -28,7 +28,9 @@ class NeighborSum:
                     grid[r + 1][c + 1] if r + 1 < len(grid) and c + 1 < len(grid) else 0
                 )
 
-                self.diag_cache[grid[r][c]] = up_left + down_left + up_right + down_right
+                self.diag_cache[grid[r][c]] = (
+                    up_left + down_left + up_right + down_right
+                )
 
     def adjacentSum(self, value: int) -> int:
         return self.adj_cache[value]
