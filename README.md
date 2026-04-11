@@ -60,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 | [1656-design-an-ordered-stream](https://github.com/kevingreenb/algos/tree/main/1656-design-an-ordered-stream/) | Easy |
+| [3242-design-neighbor-sum-service](https://github.com/kevingreenb/algos/tree/main/3242-design-neighbor-sum-service/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -90,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0705-design-hashset](https://github.com/kevingreenb/algos/tree/main/0705-design-hashset/) | Easy |
 | [0706-design-hashmap](https://github.com/kevingreenb/algos/tree/main/0706-design-hashmap/) | Easy |
 | [1656-design-an-ordered-stream](https://github.com/kevingreenb/algos/tree/main/1656-design-an-ordered-stream/) | Easy |
+| [3242-design-neighbor-sum-service](https://github.com/kevingreenb/algos/tree/main/3242-design-neighbor-sum-service/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -113,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0933-number-of-recent-calls](https://github.com/kevingreenb/algos/tree/main/0933-number-of-recent-calls/) | Easy |
 | [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
 | [1656-design-an-ordered-stream](https://github.com/kevingreenb/algos/tree/main/1656-design-an-ordered-stream/) | Easy |
+| [3242-design-neighbor-sum-service](https://github.com/kevingreenb/algos/tree/main/3242-design-neighbor-sum-service/) | Easy |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -141,8 +144,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
+| [3242-design-neighbor-sum-service](https://github.com/kevingreenb/algos/tree/main/3242-design-neighbor-sum-service/) | Easy |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1603-design-parking-system](https://github.com/kevingreenb/algos/tree/main/1603-design-parking-system/) | Easy |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3242-design-neighbor-sum-service](https://github.com/kevingreenb/algos/tree/main/3242-design-neighbor-sum-service/) | Easy |
 <!---LeetCode Topics End-->
