@@ -1,42 +1,35 @@
 class NeighborSum:
-
     def __init__(self, grid: List[List[int]]):
         self.adj_cache = {}
         self.diag_cache = {}
-        self.compute_adj_grid(grid)
-        self.compute_diag_grid(grid)
+        self._precompute(grid)
 
-    def compute_adj_grid(self, grid) -> None:
-        for r in range(len(grid)):
-            for c in range(len(grid[r])):
+    def _precompute(self, grid):
+        n = len(grid)
+        # (row_offset, col_offset)
+        adj_dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        diag_dirs = [(-1, -1), (-1, 1), (1, -1), (1, 1)]
+        
+        for r in range(n):
+            for c in range(n):
+                val = grid[r][c]
+                self.adj_cache[val] = self._get_sum(grid, r, c, adj_dirs)
+                self.diag_cache[val] = self._get_sum(grid, r, c, diag_dirs)
 
-                up = grid[r - 1][c] if r > 0 else 0
-                down = grid[r + 1][c] if r + 1 < len(grid) else 0
-                left = grid[r][c - 1] if c > 0 else 0
-                right = grid[r][c + 1] if c + 1 < len(grid[r]) else 0
+    def _get_sum(self, grid, r, c, dirs):
+        n = len(grid)
+        total = 0
+        for dr, dc in dirs:
+            nr, nc = r + dr, c + dc
+            if 0 <= nr < n and 0 <= nc < n:
+                total += grid[nr][nc]
+        return total
 
-                self.adj_cache[grid[r][c]] = up + down + left + right
+    def adjacentSum(self, value):
+        return self.adj_cache.get(value, 0)
 
-    def compute_diag_grid(self, grid) -> None:
-        for r in range(len(grid)):
-            for c in range(len(grid[r])):
-
-                up_left = grid[r - 1][c - 1] if r > 0 and c > 0 else 0
-                down_left = grid[r + 1][c - 1] if r + 1 < len(grid) and c > 0 else 0
-                up_right = grid[r - 1][c + 1] if r > 0 and c + 1 < len(grid) else 0
-                down_right = (
-                    grid[r + 1][c + 1] if r + 1 < len(grid) and c + 1 < len(grid) else 0
-                )
-
-                self.diag_cache[grid[r][c]] = (
-                    up_left + down_left + up_right + down_right
-                )
-
-    def adjacentSum(self, value: int) -> int:
-        return self.adj_cache[value]
-
-    def diagonalSum(self, value: int) -> int:
-        return self.diag_cache[value]
+    def diagonalSum(self, value):
+        return self.diag_cache.get(value, 0)
 
 
 # Your NeighborSum object will be instantiated and called as such:
