@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -31,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
 | [0463-island-perimeter](https://github.com/kevingreenb/algos/tree/main/0463-island-perimeter/) | Easy |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -42,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
 | [0257-binary-tree-paths](https://github.com/kevingreenb/algos/tree/main/0257-binary-tree-paths/) | Easy |
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -52,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0126-word-ladder-ii](https://github.com/kevingreenb/algos/tree/main/0126-word-ladder-ii/) | Hard |
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
 | [0463-island-perimeter](https://github.com/kevingreenb/algos/tree/main/0463-island-perimeter/) | Easy |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -127,6 +131,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/kevingreenb/algos/tree/main/0173-binary-search-tree-iterator/) | Medium |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 ## Iterator
 | Problem Name | Difficulty |
 | ------- | ------- |
