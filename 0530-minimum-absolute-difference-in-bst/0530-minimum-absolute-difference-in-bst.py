@@ -8,17 +8,17 @@ class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
         stack = []
         node = root
-        ans = 10**5
-        prev = root.val
+        ans = float('inf')
+        prev = None
 
         while stack or node:
             while node:
                 stack.append(node)
                 node = node.left
             node = stack.pop()
-            if prev != node.val:
+            if prev is not None:
                 ans = min(ans, abs(node.val - prev))
-                prev = node.val
+            prev = node.val
             node = node.right
         
         return ans
