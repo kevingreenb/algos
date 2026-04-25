@@ -10,7 +10,7 @@ class Solution:
         q = deque([root])
         while q:
             size = len(q)
-            level_sum = 0.0
+            level_sum = 0
             for _ in range(size):
                 cur = q.popleft()
                 level_sum += cur.val
