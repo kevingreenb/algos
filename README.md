@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 | [0617-merge-two-binary-trees](https://github.com/kevingreenb/algos/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0637-average-of-levels-in-binary-tree](https://github.com/kevingreenb/algos/tree/main/0637-average-of-levels-in-binary-tree/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -35,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/kevingreenb/algos/tree/main/0463-island-perimeter/) | Easy |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 | [0617-merge-two-binary-trees](https://github.com/kevingreenb/algos/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0637-average-of-levels-in-binary-tree](https://github.com/kevingreenb/algos/tree/main/0637-average-of-levels-in-binary-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -48,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0404-sum-of-left-leaves](https://github.com/kevingreenb/algos/tree/main/0404-sum-of-left-leaves/) | Easy |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 | [0617-merge-two-binary-trees](https://github.com/kevingreenb/algos/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0637-average-of-levels-in-binary-tree](https://github.com/kevingreenb/algos/tree/main/0637-average-of-levels-in-binary-tree/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -60,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0463-island-perimeter](https://github.com/kevingreenb/algos/tree/main/0463-island-perimeter/) | Easy |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/kevingreenb/algos/tree/main/0530-minimum-absolute-difference-in-bst/) | Easy |
 | [0617-merge-two-binary-trees](https://github.com/kevingreenb/algos/tree/main/0617-merge-two-binary-trees/) | Easy |
+| [0637-average-of-levels-in-binary-tree](https://github.com/kevingreenb/algos/tree/main/0637-average-of-levels-in-binary-tree/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
